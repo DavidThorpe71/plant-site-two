@@ -9,7 +9,6 @@ collections:
   - name: plants
     label: Plants
     folder: plants
-    slug: { { slug } }
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
