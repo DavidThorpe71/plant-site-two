@@ -3,11 +3,12 @@ import { graphql } from "gatsby"
 
 export default ({ data }) => {
   const post = data.markdownRemark
+
   return (
     <div>
       <h1>{post.frontmatter.name}</h1>
-      {/* <p>{post.frontmatter.date}</p>
-      <img src={post.frontmatter.thumbnail} />
+      {/* {/* <p>{post.frontmatter.date}</p> */}
+      {/* <img src={post.frontmatter.thumbnail} /> */}
       {/* <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <p>{post.frontmatter.notes}</p> */}
     </div>
