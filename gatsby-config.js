@@ -5,7 +5,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/plants`,
-        name: "markdown-pages",
+        name: "plants",
       },
     },
     `gatsby-transformer-remark`,
