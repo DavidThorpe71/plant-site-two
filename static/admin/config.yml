@@ -9,6 +9,10 @@ media_library:
   config:
     cloud_name: dykweel8h
     api_key: 852518696577879
+    default_transformations:
+      - - fetch_format: auto
+          width: 600
+          quality: auto
 
 collections:
   - name: plants
