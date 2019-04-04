@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 export default ({ data }) => {
   const { allMarkdownRemark } = data
@@ -7,7 +7,7 @@ export default ({ data }) => {
   return (
     <div>
       {edges.map(item => (
-        <a href={item.node.fields.slug}>{item.node.frontmatter.name}</a>
+        <Link href={item.node.fields.slug}>{item.node.frontmatter.name}</Link>
       ))}
     </div>
   )
