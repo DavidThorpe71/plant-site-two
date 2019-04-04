@@ -4,6 +4,11 @@ backend:
 
 media_folder: static/assets
 public_folder: assets
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dykweel8h
+    api_key: y5COcmbLCd7kt1xv6Swydrx_VJE
 
 collections:
   - name: plants
@@ -11,9 +16,42 @@ collections:
     folder: plants
     create: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Watering frequency", name: "waterFreq", widget: "datetime" }
-      - { label: "Light instructions", name: "lightInst", widget: "string" }
-      - { label: "Notes", name: "notes", widget: "string" }
+      - label: "Name"
+        name: "name"
+        widget: "string"
+        required: true
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        required: true
+      - label: "Purchase date"
+        name: "date"
+        widget: "datetime"
+        required: true
+      - label: "Watering frequency"
+        name: "waterFreq"
+        widget: "select"
+        options:
+          [
+            "Daily",
+            "Weekly",
+            "Every two weeks",
+            "Once a month",
+            "Less than once a month",
+          ]
+        required: false
+      - label: "Light instructions"
+        name: "lightInst"
+        widget: "select"
+        options:
+          [
+            "No light needed",
+            "In the shade",
+            "Indirect light",
+            "By a window",
+            "Direct light",
+          ]
+      - label: "Notes"
+        name: "notes"
+        widget: "text"
+        required: false
