@@ -7,7 +7,7 @@ export default ({ data }) => {
   return (
     <div>
       {edges.map(item => (
-        <p>{item.node.frontmatter.name}</p>
+        <a href={item.node.fields.slug}>{item.node.frontmatter.name}</a>
       ))}
     </div>
   )
@@ -19,6 +19,9 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             name
           }
