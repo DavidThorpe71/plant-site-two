@@ -14,4 +14,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Notes", name: "notes", widget: "markdown" }
+      - { label: "Watering frequency", name: "waterFreq", widget: "datetime" }
+      - { label: "Light instructions", name: "lightInst", widget: "string" }
+      - { label: "Notes", name: "notes", widget: "string" }
