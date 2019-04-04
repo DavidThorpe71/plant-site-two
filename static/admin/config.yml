@@ -8,7 +8,7 @@ media_library:
   name: cloudinary
   config:
     cloud_name: dykweel8h
-    api_key: y5COcmbLCd7kt1xv6Swydrx_VJE
+    api_key: 852518696577879
 
 collections:
   - name: plants
